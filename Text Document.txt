@@ -1,0 +1,30 @@
+Postman ilovasi orqali:
+
+=================================================
+Userni register qilish linki: http://127.0.0.1:8000/api/register/
+
+json fayl shaklda:
+{
+    "username": "jhonuser",
+    "password": "jhon123",
+    "first_name": "John",
+    "last_name": "Doe"
+}
+
+POST qilib jo'natamiz va ma'lumotlar bazaga jo'natiladi keyin tekon yaratiladi. Quyidagicha:
+{
+    "token": "f1473bcfcd2139a4947c29445cf1f102ee1c8a44"
+}
+
+=================================================
+Userni login qilish 
+url: http://127.0.0.1:8000/api/login/
+
+json faylda shaklda 
+{
+    "username": "jhonuser",
+    "password": "jhon123"
+}
+
+POST qilib jo'natiladi va ma'lumotlar bazasidan mavjud userni chaqiradi va token shaklda ma'lumot qaytdadi.
+

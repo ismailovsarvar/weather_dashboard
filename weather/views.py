@@ -7,7 +7,7 @@ from rest_framework.authtoken.models import Token
 from .serializers import RegisterSerializer, LoginSerializer
 from .models import TemperatureColor, WindColor, CloudColor
 from django.contrib.auth import authenticate
-from rest_framework.permissions import AllowAny, IsAuthenticatedOrReadOnly
+from rest_framework.permissions import AllowAny, IsAuthenticated
 
 """
 UZ: Register va Login uchun APIView yaratish: 
@@ -54,7 +54,7 @@ UZ: Ob-havo ma'lumotlarini olish uchun APIView yaratish:
 EN: Create a APIView to collect weather data:
 """
 class WeatherAPIView(APIView):
-    permission_classes = [IsAuthenticatedOrReadOnly]
+    permission_classes = [IsAuthenticated]
 
     def get_weather_color(self, model, value, min_field, max_field, default_color="#FFFFFF"):
         # Ko'rsatilgan qiymatga mos rangni qaytaradi.

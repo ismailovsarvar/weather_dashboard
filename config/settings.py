@@ -142,3 +142,10 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 WEATHER_API_KEY = "ebc3513d39594ea79a7170633252701"
+
+# CACHES = {
+#     'default': {
+#         'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',  # Agar redis ishlatmoqchi bo'lsangiz, 'django_redis.cache.RedisCache' ishlating
+#         'LOCATION': 'unique-snowflake',
+#     }
+# }
